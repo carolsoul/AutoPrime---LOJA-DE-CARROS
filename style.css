@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Excon', sans-serif;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(130deg, rgb(0, 0, 0) 0%, rgb(22, 24, 41) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 40px 60px 0px;
+    padding: 20px 30px;
+    background-color: #354557;
+    border-radius: 40px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 50px;
+    font-weight: 200;
+}
+
+nav ul li a{
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    font-weight: 600;
+}
+.btn_cart button{
+    padding: 6px 8px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: 0.3s ease;
+}
+.btn_cart button:hover{
+    cursor: pointer;
+    background-color: #328cc0;
+    border: 2px solid #328cc0;
+}
+
+.btn_cart img{
+    width: 25px;
+}
+
+button{
+    background-color: #328cc0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.container_info_carro{
+    background: rgb(0,0,0);
+    background: linear-gradient(130deg, rgb(14, 14, 22) 0%, rgb(53, 69, 87) 100%);
+    border-radius: 30px;
+    margin: 20px 20px 20px 60px;
+    padding: 40px 60px;
+    width: 740px;
+}
+.container_info_carro p{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.informacao{
+    display: flex;
+    width: 300px;
+    margin-bottom: 30px;
+}
+.btn_info{
+    width: 275px;
+    height: 80px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin: 0 30px 0 0;
+    transition: transform 0.5s;
+}
+.btn_info:hover{
+     cursor: pointer;
+    transform: translateX(5px) scale(1.1);
+    background-color: #fff;
+    color: #354557;
+}
+
+small{
+    font-weight: 100;
+}
+
+.container_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 20px;
+    width: 600px;
+
+}
+
+.carro1{
+    border-radius: 30px;
+    margin: 20px 0;
+    width: 420px;
+    height: 700px;
+}
+
+.caixa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info_1, .info_2, .info_3{
+    display: grid;
+    justify-items: center;
+}
+
+.info_1 img, .info_2 img, .info_3 img{
+    margin: 50px 0 20px;
+}
+
+h2{
+    text-align: center;
+    margin: 30px 60px;
+    font-size: 35px;
+    width: 1200px;
+}
+
+.cards_novidades{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    margin-left: 60px;
+}
+
+.card_1 img, .card_2 img, .card_3 img{
+    width: 380px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card_1, .card_2, .card_3{
+    background-color: #ffffff1c;
+    width: 380px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.info_card{
+    padding: 30px 20px;
+}
+
+.info_card h3{
+    white-space: nowrap;         /* Não quebra linhas */
+  overflow: hidden;            /* Esconde o excesso de texto */
+  text-overflow: ellipsis;     /* Adiciona "..." no final do texto cortado */
+  width: 300px;           
+}
+
+.cards_novidades button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-top: 30px;
+    width: 150px;
+    margin-left: 10px;
+    transition: 0.5s ease-in-out;
+}
+.cards_novidades button:hover{
+    cursor: pointer;
+    background-color: #328cc0;
+    border: none;
+}
+
+.formulario{
+    background-color: #328cc0;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    width: 900px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.container_form p{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.caixa_form{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.caixa_form p{
+    color: #354557;
+    font-size: 15px;
+}
+.caixa_form small{
+    color: #354557;
+    font-weight: 400;
+}
+
+form{
+    display: grid;
+    margin-left: 70px;
+}
+
+input{
+    border-radius: 30px;
+    margin-bottom: 10px;
+    color: #354557;
+    padding-left: 20px;
+    border: none;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #354557;
+    border: 2px solid #354557;
+}
+
+@media (max-width: 768px) {
+    header{
+        margin-left: 40px;
+    }
+    nav ul li{
+        margin-right: 30px;
+    }
+    .cards_novidades {
+        margin-left: 40px;
+        flex-direction: column;
+        width: 90%;
+    }
+    .caixa{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .container_info_carro{
+        width: 690px;
+        margin-left: 40px;
+    }
+    .container_foto_carro img{
+        width: 690px;
+        height: 950px;
+        margin-left: 40px;
+    }
+    .btn_info{
+        width: 250px;
+    }
+    h2{
+        width: 700px;
+        margin: 30px 40px;
+    }
+    .cards_novidades {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .formulario {
+        margin-left: 40px;
+        grid-template-columns: 1fr;
+        width: 690px;
+        gap: 50px;
+    }
+    form{
+        margin: 0;
+    }
+    input{
+        height: 50px;
+    }
+}
